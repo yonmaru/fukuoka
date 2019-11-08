@@ -1,0 +1,195 @@
+@charset "UTF-8";
+html {
+	font-size:62.5%;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1.5;
+	font-size:1.4rem;
+	word-wrap : break-word;
+	overflow-wrap : break-word;
+	/*word-break:break-all;*/
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+input {
+	-webkit-appearance: none;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-font-feature-settings: 'palt';
+	font-feature-settings: 'palt';
+}
+
+.clearfix:after,
+div:after,
+ul:after,
+dl:after,
+li:after,
+article:after,
+section:after,
+.search .list table tr:after,
+.home-recommend li a:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+input, button, textarea, select {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.contact table td input,
+.contact table td select,
+.contact table td option,
+.contact table td textarea {
+	border:1px solid #e0e0e0;
+	margin-left:8px;
+	background-color:#fbfbfb;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	padding:4px 8px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	line-height:24px;
+	font-size:16px;
+}
+.contact table td input:focus,
+.contact table td textarea:focus,
+.contact table td select:focus,
+.contact table td textarea:focus {
+	border:1px solid #2A92C8 !important;
+	background-color:#fff;
+	outline:none;
+}
+input,
+select,
+option,
+textarea {
+	border:1px solid #e0e0e0;
+	margin-left:8px;
+	background-color:#fbfbfb;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	padding:4px 8px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	line-height:24px;
+	font-size:16px;
+}
+input:focus,
+textarea:focus,
+select:focus,
+textarea:focus {
+	border:1px solid #2A92C8 !important;
+	background-color:#fff;
+	outline:none;
+}
+select {
+	background:url(/-/rengofukuoka/file/html/open/img/form-arrow.png) no-repeat right center;
+	background-size:22px 32px;
+	padding-right:28px !important;
+	cursor: pointer;
+    background-color: #fff;
+}
+
+

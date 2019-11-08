@@ -1,0 +1,21 @@
+fm01fm01@charset "UTF-8";
+/* デスクトップPC用CSS */
+
+.hidden-sp {
+	display:inherit !important;
+}
+.hidden-tb {
+	display:inherit !important;
+}
+.hidden-pc {
+	display:none !important;
+}
+.only-sp {
+	display: none !important;
+}
+.only-tb {
+	display: none !important;
+}
+.only-pc {
+	display: inherit !important;
+}

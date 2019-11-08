@@ -1,0 +1,1747 @@
+@charset "UTF-8";
+
+.inner {
+	width:980px;
+    padding:0px;
+	margin:0 auto;
+	position:relative;
+}
+
+img {
+    display:block;
+}
+
+div#pages {
+    margin-right: 0 !important;
+    padding: 0 !important;
+    overflow:visible;
+}
+
+body:not(.kikanshi):not(.archive2) .header,
+.navi,
+body:not(.archive2) .block > h3,
+body:not(.kikanshi):not(.archive2) .titleBlock,
+body:not(.kikanshi):not(.archive2) .autherBlock,
+body:not(.kikanshi):not(.archive2) .dateBlock,
+.control a.top,
+.control img,
+.operation img,
+.navi2 + .link {
+    display:none;
+}
+header.header {
+    display:block !important;
+}
+
+iframe.autoHeight {
+    width:100%;
+}
+
+/* --------------------------------------------------------------基本設定 */
+
+.arrowbtn01 {
+    font-family: fot-rodin-pron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#fff;
+    text-align: center;
+    background-color: #EE8883;
+    width:46.875%;
+    margin:48px auto;
+    font-size:2rem;
+    padding:0.6em 0;
+    display: block;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+.arrowbtn01:after {
+    content: "＞";
+    position: relative;
+    left:0.3em;
+}
+
+.arrowbtn02 {
+    font-family: fot-rodin-pron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#fff;
+    text-align: center;
+    background-color: #EE8883;
+    display: inline-block;
+    padding:0.1em 1.5em;
+    position: relative;
+    text-decoration: none;
+}
+.arrowbtn02:after {
+    content: "";
+    width:5px;
+    height:8px;
+    display: inline-block;
+    background: url("../img/arrow03.png") no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+	top: 50%;
+	right: 10%;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+
+.arrowbtn03 {
+    display: block;
+    position: relative;
+}
+.arrowbtn03:after {
+    content: "";
+    width:10px;
+    height:13px;
+    display: inline-block;
+    background: url("../img/arrow03.png") no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+	top: 50%;
+	right: 5%;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+
+.arrowbtn04 {
+    font-family: fot-rodin-pron, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#EE8883;
+    text-align: center;
+    background-color: #fff;
+    width:46.875%;
+    margin:48px auto 0;
+    font-size:2rem;
+    padding:0.6em 0;
+    display: block;
+    text-decoration: none;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+.arrowbtn04:after {
+    content: "＞";
+    position: relative;
+    left:0.3em;
+}
+
+
+.arrowbtn05 a {
+    position: relative;
+    border: 2px solid #0067B2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: #fff;
+    color:#0067B2 !important;
+    font-weight: bold;
+    font-size:2rem;
+    display: block;
+    width: 440px;
+    margin:1.5em auto 1em;
+    padding:0.5em 0;
+    text-align: center;
+}
+.arrowbtn05 a:after {
+    content:"";
+    background: url("/-/rengofukuoka/file/html/open/img/arrow08.png") no-repeat 0 0;
+    background-size: contain;
+    display: block;
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.arrowbtn06 a {
+    font-weight: bold;
+    font-size:1.8rem;
+    margin:0 1em;
+}
+.arrowbtn06 a:hover {
+    text-decoration: underline;
+}
+.arrowbtn06 a:before {
+    content:url("/-/rengofukuoka/file/html/open/img/arrow07.png");
+    display: inline-block;
+    padding-right: 0.5em;
+    font-weight: normal;
+}
+
+
+/* --------------------------------------------------------------カルーセル */
+/*.slick-list {
+    overflow: visible !important;
+}
+.main_visual {
+    width:100%;
+    overflow: hidden;
+    padding:0;
+    min-width: 980px;
+    box-shadow: inset 0 2px 2px #ddd;
+    -moz-box-shadow: inset 0 2px 2px #ddd;
+    -webkit-box-shadow: inset 0 2px 2px #ddd;
+    -o-box-shadow: inset 0 2px 2px #ddd;
+}
+.slider {
+    width:980px;
+    margin:0 auto;
+}
+.slider .slick-slide {
+	opacity: 0.5;
+    position: relative;
+    transition: all 0.3s linear;
+}
+.slider .slider-frame {
+	display:block !important;
+    pointer-events: none;
+    cursor: default;
+}
+.slider span.belt {
+	position: absolute;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.75);
+    color:#1073B9;
+    font-weight: bold;
+    bottom:0;
+    width:100%;
+    padding:0.3em 1em;
+    font-size: 1.8rem;
+}
+.slider span.belt img {
+	position: absolute;
+    right:1em;
+	top: 50%;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+.slider .slick-active .slider-frame {
+    pointer-events:all;
+    cursor: pointer;
+}
+.slider .slick-active {
+	opacity: 1;
+}
+.slider .slick-slide span.belt {
+	opacity: 0;
+    transition: all 0.3s linear;
+}
+.slider .slick-active span.belt {
+	opacity: 1;
+}
+.slick-slide img {
+    margin:0;
+}*/
+
+.slick-list {
+    overflow: visible !important;
+}
+.slick-slider {
+    position: relative;
+}
+.slick-slider:before,
+.slick-slider:after {
+    content: "";
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    width: 200%;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+.slick-slider:before {
+    left: -200%;
+}
+.slick-slider:after {
+    right: -200%;
+}
+.main_visual {
+    width:100%;
+    overflow: hidden;
+    padding:0;
+    min-width: 980px;
+    box-shadow: inset 0 2px 2px #ddd;
+    -moz-box-shadow: inset 0 2px 2px #ddd;
+    -webkit-box-shadow: inset 0 2px 2px #ddd;
+    -o-box-shadow: inset 0 2px 2px #ddd;
+}
+.slider {
+    width:980px;
+    margin:0 auto;
+}
+.slider .slick-slide {
+    position: relative;
+}
+.slider .slider-frame {
+	display:block !important;
+    /*pointer-events: none;
+    cursor: default;*/
+}
+.slider span.belt {
+	position: absolute;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.75);
+    color:#1073B9;
+    font-weight: bold;
+    bottom:0;
+    width:100%;
+    padding:0.3em 1em;
+    font-size: 1.8rem;
+}
+.slider span.belt img {
+	position: absolute;
+    right:1em;
+	top: 50%;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+.slider .slick-active .slider-frame {
+    pointer-events:all;
+    cursor: pointer;
+}
+.slider .slick-active {
+	opacity: 1;
+}
+.slider .slick-active span.belt {
+	opacity: 1;
+}
+.slick-slide img {
+    margin:0;
+}
+
+.slick-prev {
+    background-image: url("/-/rengofukuoka/file/html/open/img/top/prev.png") !important;
+    background-size: cover !important;
+    left:-64px !important;
+}
+.slick-next {
+    background-image: url("/-/rengofukuoka/file/html/open/img/top/next.png") !important;
+    background-size: cover !important;
+    right:-64px !important;
+}
+.slick-prev, .slick-next {
+    z-index:2;
+    display: block;
+    width: 35px !important;
+    height: 64px !important;
+    padding: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.slick-prev:before, .slick-next:before {
+    display: none !important;
+}
+
+/* --------------------------------------------------------------ヘッダー */
+.header {}
+.header .inner {
+    padding:28px 0 0;
+}
+.header a {
+    text-decoration: none;
+}
+.header a img {
+    transition: all 0.2s linear;
+}
+.header a:hover img {
+    opacity: 0.5;
+}
+.header .header-col {
+    float: left;
+}
+.header .header-col1 {
+    width:614px;
+    padding:0 0 0 18px;
+}
+.header .header-col1 h1 {
+    font-size:1.2rem;
+    font-weight: normal;
+    padding:0.5em 0;
+}
+.header .header-col1 a {
+    display: block;
+}
+.header .header-col2 {
+    float: right;
+    padding:0;
+}
+
+.header .gnav {
+    clear: both;
+    width: 100%;
+    padding:20px 0;
+}
+.header .gnav ul {}
+.header .gnav li {
+    list-style-type: none;
+    width:20%;
+    text-align: center;
+    float:left;
+}
+.header .gnav span {
+    color: #000;
+    font-size: 1.6rem;
+    display: block;
+    border-left:1px solid #474747;
+    padding:0.8em 0;
+    position: relative;
+}
+.header .gnav li:last-of-type span {
+    border-right:1px solid #474747;
+}
+.header .gnav span:after {
+    content:"";
+    display:block;
+    width:12px;
+    height:6px;
+    background: url("/-/rengofukuoka/file/html/open/img/arrow01_on.png") no-repeat 0 0;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: all 0.2s linear;
+}
+.header .gnav span:hover {
+    cursor: default;
+}
+.header .gnav span:hover:after {
+    -webkit-transform: translate(-50%, 100%);
+    -moz-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
+    -o-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
+}
+.header .gnav a:hover {}         
+.header .gnav li ul {
+    display: none;
+    position: absolute;
+    width:196px;
+    z-index:100;
+    padding-top: 20px;
+}
+.header .gnav li li {
+    width:100%;
+}
+.header .gnav li li a {
+    width:100%;
+    display: block;
+    color:#fff;
+    padding:0.8em 0;
+    background-color: rgba(0,113,188,0.90);
+    cursor: pointer;
+}
+.header .gnav li li a:hover {
+    background-color: rgba(0,142,236,0.90);
+}
+
+/* --------------------------------------------------------------フッター */
+
+.footer {
+    background-color: #2E94D9;
+    min-width: 980px;
+}
+
+.copyright {
+    text-align: left;
+    padding: 2em 0;
+    color:#fff;
+    float:left;
+}
+.footer a {
+    float:right;
+    padding: 2em 0;
+    display:block;
+    text-decoration: none;
+    color:#fff;
+}
+.footer a:after {
+    content: url("/-/rengofukuoka/file/html/open/img/arrow02.png");
+    position: relative;
+    top:2px;
+    margin-left:0.2em;
+}
+
+.pagetop {
+    position: fixed;
+    bottom:48px;
+    right:72px;
+    z-index: 10000;
+}
+.pagetop img {
+    display: block;
+    transition: all 0.2s linear;
+}
+.pagetop a:hover img {
+    opacity: 0.5;
+}
+.footer .pagetop a {
+    padding: 0;
+}
+.footer .pagetop a:after {
+    display: none;
+}
+
+
+/* --------------------------------------------------------------ホーム */
+
+.home-wrapper {
+    padding:40px 0;
+}
+.home-wrapper li {
+    list-style-type: none;
+}
+.home-wrapper a {
+    text-decoration: none;
+    color:#000;
+}
+.home-leftcol {
+    float:left;
+    width:732px;
+}
+.home-leftcol ul {
+    border-bottom:1px dotted #2F2F2F;
+    margin-top:28px;
+}
+.home-leftcol li {
+    border-top:1px dotted #2F2F2F;
+    padding:1.3em 0;
+}
+.home-leftcol li p.date {
+    float:left;
+    width:200px;
+}
+.home-leftcol dl {
+    float:right;
+    width:532px;
+}
+.home-leftcol dt {
+    color:#0053AE;
+    font-size:1.3rem;
+}
+.home-leftcol dt br {
+    display: none;
+}
+.home-leftcol dd {
+    overflow: hidden;
+    width: 100%;
+    display:block;
+}
+.home-leftcol dd a {
+    font-size: 1.6rem;
+    display:block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.home-leftcol dd a:hover {
+    text-decoration: underline;
+}
+
+.home-rightcol {
+    float:right;
+    width:224px;
+}
+.home-rightcol ul {
+    padding:16px 0 0;
+}
+.home-rightcol li {
+    padding:0 0 8px;
+}
+.home-rightcol li a {
+    overflow: hidden;
+    width: 100%;
+    display:block;
+}
+.home-rightcol li img {
+    border:1px solid #2F2F2F;
+    display:block;
+}
+.home-rightcol li span {
+    display:block;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 2;
+}
+.home-rightcol .ichiran-link {
+    color:#0053AE;
+    display:block;
+    text-align: right;
+}
+
+.home-recommend {
+    background-color: #A2D6F7;
+    min-width: 980px;
+}
+.home-recommend .inner {
+    padding:38px 0 20px;
+}
+.home-recommend ul {
+    padding:28px 0 0;
+}
+.home-recommend li {
+    list-style-type: none;
+    width:224px;
+    float:left;
+    margin:0 28px 20px 0;
+}
+.home-recommend li:nth-of-type(4n) {
+    margin-right:0;
+}
+.home-recommend li a {
+    display:block;
+    background-color: #fff;
+    padding:5px 8px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font-weight: bold;
+    color:#000;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+}
+.home-recommend li img {
+    width:50px;
+    float:left;
+}
+.home-recommend li span {
+    display: block;
+    position: absolute;
+	top: 50%;
+	right: 16px;
+    width:136px;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+    text-align: left;
+}
+
+
+#newsdata {
+    display:none;
+}
+#newsboxes .date {
+    position: relative;
+}
+#newsboxes .up .date:after,
+#newsboxes .new .date:after {
+    position: absolute;
+    display:inline-block;
+    color:#fff;
+    font-size:1rem;
+    padding:0.2em 0;
+    font-weight: bold;
+    right:3.5em;
+    min-width: 4em;
+    text-align: center;
+}
+#newsboxes .up .date:after {
+    content:"UP";
+    background-color: #1073BA;
+}
+#newsboxes .new .date:after {
+    content:"NEW";
+    background-color: #E91269;
+}
+
+#bnrdata {
+    display:none;
+}
+
+#rcmdata {
+    display:none;
+}
+#rcmboxes .hide {
+    display:none;
+}
+
+#mvdata {
+    display:none;
+}
+
+#ckdata {
+    display: none;
+}
+
+/* --------------------------------------------------------------下層ページ */
+
+.wrapper {
+    padding:0 0 24px;
+}
+.wrapper li {
+    list-style-type: none;
+}
+.wrapper a {
+    text-decoration: none;
+    color:#000;
+}
+
+.head_l1,
+.archive .list h3,
+.kikanshi h1,
+.archive2 h1,
+.archive2 h3 {
+    background-color: #C3E7FF;
+    color:#000;
+    font-weight: bold;
+    font-size:2rem;
+    letter-spacing:1px;
+    line-height: 1.2;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    padding:0.5em 0.8em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.archive .list h3 {
+    margin-bottom: 0.5em;
+}
+.archive .list ~ .list {
+    padding-top: 3em;
+}
+.head_l2,
+.kikanshi .titleBlock,
+.archive2 .titleBlock {
+    color:#000;
+    font-weight: bold;
+    font-size:2.2rem;
+    letter-spacing:1px;
+    line-height: 1.2;
+    padding:0.2em 0;
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 1em;
+}
+.head_l3 {
+    background-color: #F0F0F0;
+    color:#000;
+    font-weight: bold;
+    font-size:1.8rem;
+    letter-spacing:1px;
+    line-height: 1.2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding:0.5em 0.8em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.head_l4,
+.single .text h4,
+.archive2 .text h4 {
+    color:#000;
+    font-weight: bold;
+    font-size:1.6rem;
+    letter-spacing:1px;
+    line-height: 1.2;
+    padding:0.5em 0;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.head_l4:before,
+.head_l4:after,
+.single .text h4:before,
+.single .text h4:after,
+.archive2 .text h4:before,
+.archive2 .text h4:after {
+    content:"";
+    width:1em;
+    height:2em;
+    display: inline-block;
+    position: relative;
+    top:0.6em;
+}
+.head_l4:before,
+.single .text h4:before,
+.archive2 .text h4:before {
+    background: url("/-/rengofukuoka/file/html/open/img/kakko01.png") no-repeat left 0;
+    background-size: contain;
+    margin-right:1em;
+}
+.head_l4:after,
+.single .text h4:after,
+.archive2 .text h4:after {
+    background: url("/-/rengofukuoka/file/html/open/img/kakko02.png") no-repeat right 0;
+    background-size: contain;
+    margin-left:1em;
+}
+.single .text h5,
+.archive2 .text h5 {
+    color:#000;
+    font-weight: bold;
+    font-size:1.6rem;
+    letter-spacing:1px;
+    line-height: 1.8;
+    width: 100%;
+    margin: 1.2em 0;
+}
+
+.single .text,
+.archive2 .text {
+    color:#000;
+    font-size:1.5rem;
+    letter-spacing:0px;
+    line-height: 1.6;
+}
+
+.linkbtn-col4 {
+    margin: 3em 0;
+}
+.linkbtn-col4 li {
+    width:23.5%;
+    float:left;
+    margin-right:2%;
+}
+.linkbtn-col4 li:last-of-type {
+    margin-right:0;
+}
+.linkbtn-col4 a {
+    background-color: #0066B5;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    line-height: 1.4;
+    padding:1.2em 0;
+}
+.linkbtn-col4 a:hover {
+    background-color: #007BDB;
+}
+
+.linkbtn-col2 {
+    margin: 0 0 3em;
+}
+.linkbtn-col2 li {
+    width:49%;
+    float:left;
+    margin-right:2%;
+}
+.linkbtn-col2 li:last-of-type {
+    margin-right:0;
+}
+.linkbtn-col2 a {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    line-height: 1.4;
+    padding:1.2em 0;
+    background: url("/-/rengofukuoka/file/html/open/img/arrow11.png") no-repeat 95% center #0067B2;
+    font-size:1.6rem;
+}
+.linkbtn-col2 a:hover {
+    background-color: #007BDB;
+}
+
+
+.photo01 {}
+.photo01 img {
+    display: block;
+    width: 768px;
+    margin:3em auto;
+}
+p.basic {
+    font-size:1.5rem;
+    line-height: 2;
+    letter-spacing:1px;
+    margin-bottom: 2em;
+}
+
+
+.layout01 {
+    margin:2.5em auto;
+    text-align: center;
+}
+.layout01 p {
+    font-size:1.6rem;
+}
+.layout01 img {
+    width: 440px;
+    margin: 1.5em auto 1em;
+    display: block;
+}
+.layout01 ul {}
+.layout01 li {
+    display: inline-block;
+}
+.layout01 li a {}
+
+
+.navi2 {
+    border-top: 1px dotted #000;
+    padding: 1em 0;
+    font-size: 1.6rem;
+    margin-top: 5em;
+}
+.control {
+    float:left;
+}
+.operation {
+    float:right;
+}
+.control a,
+.operation a{
+    color:#0065B4;
+    display: inline-block;
+}
+.control span,
+.operation span{
+    display: inline-block;
+}
+.control a.back {
+    padding-right:1em;
+    border-right:1px solid #ccc;
+}
+.control span.prev {
+    margin:0 1.5em 0 1em;
+}
+.control span.prev:before {
+    content: url("/-/rengofukuoka/file/html/open/img/arrow09.png");
+    margin-right: 0.5em;
+}
+.control span.next {
+    margin:0 1em 0 0;
+}
+.control span.next:after {
+    content: url("/-/rengofukuoka/file/html/open/img/arrow10.png");
+    margin-left: 0.5em;
+}
+.operation a.edit {
+    margin-right:2em;
+}
+
+
+.soshikizu {}
+.soshikizu img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+input, button, textarea, select {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.search input,
+.search select,
+.search option,
+.search textarea {
+	border:1px solid #e0e0e0;
+	margin-right:0.5em;
+	background-color:#fbfbfb;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	padding:4px 8px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+	line-height:24px;
+	font-size:16px;
+}
+.search input:focus,
+.search textarea:focus,
+.search select:focus,
+.search textarea:focus {
+	border:1px solid #2A92C8 !important;
+	background-color:#fff;
+	outline:none;
+}
+.search select {
+	background:url(../img/contact/arrow.png) no-repeat right center;
+	background-size:22px 32px;
+	padding-right:28px !important;
+	cursor: pointer;
+}
+
+.search #kijiinfo,
+.search h4 {
+    display:none;
+}
+.search h3 {
+    background-color: #C3E7FF;
+    color:#000;
+    font-weight: bold;
+    font-size:2rem;
+    letter-spacing:1px;
+    line-height: 1.2;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    padding:0.5em 0.8em;
+    width: 100%;
+    text-align: left;
+}
+.search table {
+    border:1px solid #ccc;
+    width:100%;
+}
+.search table th {
+    white-space: nowrap;
+}
+.search table th,
+.search table td {
+    padding:0.5em;
+}
+.search table tr:nth-of-type(2n) th,
+.search table tr:nth-of-type(2n) td {
+    background-color:#F5F4F5;
+}
+.search input[type="checkbox"]  {
+    -webkit-appearance: checkbox;
+}
+@-moz-document url-prefix() {
+    .search input[type="checkbox"]  {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+.search input[type="submit"] {
+    color:#fff;
+    margin:2em auto 1em;
+    position: relative;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    color:#fff !important;
+    font-weight: bold;
+    font-size:2.4rem;
+    display: block;
+    width: 404px;
+    padding:calc(0.5em + 4px) 0;
+    text-align: center;
+    background: url("/-/rengofukuoka/file/html/open/img/arrow11.png") no-repeat 95% center #0067B2;
+}
+
+.search label {
+    padding-right:0.5em;
+    line-height: 2;
+    font-size:1.6rem;
+}
+.search #back {
+    margin:2em 0 0;
+}
+.search .list {
+    margin:1.5em 0 4em;
+}
+.search #back img {
+    display:none;
+}
+.search #back a {
+    position: relative;
+    border: 2px solid #0067B2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: #fff;
+    color:#0067B2 !important;
+    font-weight: bold;
+    font-size:2rem;
+    display: block;
+    width: 400px;
+    margin:1em auto 2em;
+    padding:0.5em 0;
+    text-align: center;
+}
+.search #back a:after {
+    content:"";
+    background: url("/-/rengofukuoka/file/html/open/img/arrow08.png") no-repeat 0 0;
+    background-size: contain;
+    display: block;
+    width: 12px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+
+.search .list table {
+    border:0px;
+    border-top:1px dotted #000;;
+    width:100%;
+}
+.search .list table td {
+    padding:1em 0;
+    border-bottom:1px dotted #000;
+    font-size:1.6rem;
+}
+.search .list table td.title {
+    padding:0.8em 3em;
+    font-weight: bold;
+}
+.search .list table td.category:before {
+    content:"［ "
+}
+.search .list table td.category:after {
+    content:" ］"
+}
+.search .list table td.name {
+    padding-left:3em;
+}
+.search .list table tr:nth-of-type(2n) td {
+    background-color:#fff;
+}
+
+
+
+.cmap {}
+.cmap-img {
+    padding:4em 0;
+    width: 594px;
+    float:left;
+}
+.cmap-img img {
+    display: block;
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden !important;
+}
+.cmap-info {
+    width: 350px;
+    float:right;
+}
+.cmap-info dl {
+    padding: 1em 0 1em 1.3em;
+    border-bottom: 1px dotted #000;
+}
+.cmap-info dl:last-of-type {
+    border-bottom: 0px;
+}
+.cmap-info dt {
+    font-size: 1.6rem;
+    text-indent: -1.3em;
+}
+.cmap-info dt:before,
+.cmap-info dt:after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height:1em;
+    position: relative;
+    top:0.1em;
+}
+.cmap-info dt:before {
+    margin-right: 0.3em;
+}
+.cmap-info dt:after {
+    margin-left: 0.3em;
+}
+.cmap-info dl:nth-of-type(1) dt:before {
+    background: url("/-/rengofukuoka/file/html/open/img/number01.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dl:nth-of-type(2) dt:before {
+    background: url("/-/rengofukuoka/file/html/open/img/number02.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dl:nth-of-type(3) dt:before {
+    background: url("/-/rengofukuoka/file/html/open/img/number03.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dl:nth-of-type(4) dt:before {
+    background: url("/-/rengofukuoka/file/html/open/img/number04.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dl:nth-of-type(5) dt:before {
+    background: url("/-/rengofukuoka/file/html/open/img/number05.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dl:nth-of-type(6) dt:before {
+    background: url("/-/rengofukuoka/file/html/open/img/number06.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dl:nth-of-type(7) dt:before {
+    background: url("/-/rengofukuoka/file/html/open/img/number07.jpg") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dt:after {
+    background: url("/-/rengofukuoka/file/html/open/img/arrow08.png") no-repeat 0 0;
+    background-size: contain;
+}
+.cmap-info dt a {
+    color:#2889D4;
+    text-decoration: underline;
+}
+.cmap-info dd {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding-top:0.3em;
+}
+
+
+
+
+.postinfo {
+    padding-bottom:1em;
+}
+.postinfo-boxes {}
+.postinfo-box {
+    width:476px;
+    float:left;
+    padding:1.2em 0;
+    border-top: 1px dotted #000;
+}
+.postinfo-box:nth-of-type(-n+2) {
+    padding-top: 0.5em;
+    border: 0px;
+}
+.postinfo-box:nth-of-type(2n+1) {
+    clear: both;
+}
+.postinfo-box:nth-of-type(2n) {
+    float:right;
+}
+.postinfo-box .imgtrm {
+    width:74px;
+    height: 74px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.postinfo-box .imgtrm img {
+    width: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.postinfo-box dl {
+    float: right;
+    width:382px;
+}
+.postinfo-box dt {}
+.postinfo-box dt span {
+    display: inline-block;
+}
+.postinfo-box dt .date {
+    padding-right: 1em;
+}
+.postinfo-box dt .category {}
+.postinfo-box dt a {
+    color:#2889D4;
+    text-decoration: underline;
+}
+.postinfo-box dd {
+    font-size:1.5rem;
+    padding: 0.7em 0 0;
+    line-height: 1.5;
+    height: 3.6em;
+    overflow: hidden;
+}
+
+
+
+.kijiinfo {
+    margin:-1em 0 1em;
+}
+.kijiinfo div {
+    display: inline-block;
+    font-size:1.3rem;
+}
+.kijiinfo .dateBlock-inc {
+    margin-right:3em;
+}
+.kijiinfo .autherBlock-inc {}
+
+.soshikidata {
+    padding:0;
+}
+.soshikidata-head dl {
+    background-color: #C3E7FF;
+    width: 100%;
+}
+.soshikidata-head dt {
+    float:left;
+    text-align: center;
+    font-weight: bold;
+    padding:0.5em 0;
+}
+.soshikidata-head dt:first-of-type {
+    width:30%;
+}
+.soshikidata-head dt:last-of-type {
+    width:70%;
+}
+
+.soshikidata-body {}
+.soshikidata-row {
+    border-bottom:1px dotted #000;
+}
+.soshikidata-row dd {
+    float:left;
+    padding:1em 0;
+}
+.soshikidata-row dd:first-of-type {
+    width:30%;
+}
+.soshikidata-row dd:last-of-type {
+    width:70%;
+}
+
+.soshikidata + .head_l4 {
+    margin-top:2em;
+}
+
+
+.archive .list img {
+    display:none;
+}
+.archive .list .kiji {
+    padding:1em 0;
+    border-bottom: 1px dotted #000;
+}
+.archive .list .title,
+.archive .list .date,
+.archive .list .auther {
+    font-size:1.6rem;
+    float:left;
+}
+.archive .list .title {
+    width:60%;
+    font-weight: bold;
+}
+.archive .list .date {
+    width: 20%;
+}
+.archive .list .auther {
+    width: 20%
+}
+
+
+div.attached {
+    margin-top:3em;
+}
+.kikanshi div.attached {
+    margin-top: 0em;
+}
+div.attached a.attached {
+    display: block;
+}
+.single div.attached a.attached,
+.kikanshi a.attached,
+.archive2 a.attached {
+	text-decoration: underline !important;
+	display: block;
+    margin:1em 0;
+    color: #0066B4;
+}
+.single div.attached a.attached:hover,
+.kikanshi a.attached:hover,
+.archive2 a.attached:hover {
+	text-decoration: none !important;
+}
+.single .text img,
+.archive2 .text img {
+	display: block;
+	margin: 1em auto;
+}
+
+.archive2 .dateBlock img.new,
+.archive2 .dateBlock img.up {
+    display:none;
+}
+
+img[src="/common/images/attached.gif"],
+img[src="/common/nlog/images/attached.gif"],
+img[src="/-/rengofukuoka/file/html/open/img/attached2.gif"] {
+    display: inline-block !important;
+	margin: 0 0.5em 0 0 !important;
+    vertical-align: sub;
+    width:auto;
+}
+
+.single .eyecatch img,
+.archive2 .eyecatch img {
+    width:auto;
+    height: auto;
+    max-width: 100%;
+    margin:1.5em auto;
+    display: block;
+}
+
+.archive2 .kijiblock ~ .kijiblock {
+    padding-top:3em;
+}
+
+#article .header {
+    padding-bottom: 0;
+}
+#article .header .dispcription {
+    display:none;
+}
+
+.kikanshi-image {
+    width:240px;
+    float:left;
+}
+.kikanshi-image img {
+    border:2px solid #979797;
+    width: 100%;
+    height:auto;
+}
+.kikanshi-image img ~ img {
+    margin-top:1.5em;
+}
+.kikanshi #kijiBlock {
+    margin:1em 0 3em;
+}
+.kikanshi #kijiBlock .text {
+    width:700px;
+    float: right;
+    color: #000;
+    font-size: 1.7rem;
+    letter-spacing: 0px;
+    line-height: 1.8;
+}
+.kikanshi #kijiBlock .text h6 {
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.kikanshi .dateBlock img {
+    display: none;
+}
+
+.kikanshi .block {
+    border-bottom: 1px dotted #000;
+    margin-bottom: 2em;
+}
+
+.kikanshi .categoryList,
+.archive2 .categoryList {
+    visibility:hidden;
+    border-top: 1px dotted #000;
+    margin-top: 1em;
+}
+.kikanshi .categoryList nobr,
+.archive2 .categoryList nobr {
+    visibility: visible;
+    display: block;
+    line-height: 1;
+    font-weight: bold;
+    font-size:1.8rem;
+    margin:0 0 0 1em;
+}
+.kikanshi .categoryList a,
+.archive2 .categoryList a {
+    visibility: visible;
+    display: block;
+    line-height: 1;
+    font-weight: bold;
+    font-size:1.8rem;
+}
+.kikanshi .categoryList a:hover,
+.archive2 .categoryList a:hover {
+    text-decoration: underline;
+}
+.kikanshi .categoryList a:before,
+.archive2 .categoryList a:before {
+    content:url("/-/rengofukuoka/file/html/open/img/arrow07.png");
+    display: inline-block;
+    padding-right: 0.5em;
+    font-weight: normal;
+}
+
+.kikanshi .navi2 {
+    margin-top: 2em;
+}
+.kikanshi-single .head_l1,
+.kikanshi-single .kijiinfo .dateBlock {
+    display:none;
+}
+
+.categoryList + .navi2 {
+    margin-top: 2em;
+}
+.archive2 .categoryList {
+    margin-top: 4em;
+    position: relative;
+    padding-top: 2.4em;
+}
+.archive2 .categoryList:before {
+    content:"";
+    height:1px;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-top: 1px dotted #000;
+    visibility: visible;
+}
+
+
+.katsudo-ul {
+    margin-top:2em;
+}
+
+.katsudo-span {
+    display: block;
+}
+.katsudo-span:first-of-type {
+    margin-top:-1em;
+}
+.arrowbtn06.katsudo-span a {
+    font-size: 1.6rem;
+    margin: 0;
+}
+.arrowbtn06.katsudo-span a:before {
+    position: relative;
+    top:1px;
+    padding-right: 0.3em;
+}
+
+.katsudo-pickup {
+    padding:1.5em 0 3em;
+}
+.katsudo-pickup-title {
+    font-weight: bold;
+    font-size:1.8rem;
+    margin-bottom:0.8em;
+}
+.katsudo-pickup-title:before {
+    content:"■";
+    display: inline-block;
+    margin-right: 0.3em;
+    color: #0065B5;
+}
+
+.katsudo-pickup .NewsLogList_container {
+    border-top:1px dotted #000;
+}
+.katsudo-pickup .NewsLogList_article {
+    font-size:1.6rem;
+    border-bottom:1px dotted #000;
+    padding:0.8em 0;
+}
+.katsudo-pickup .NewsLogList_date,
+.katsudo-pickup .NewsLogList_category {
+    font-size:1.4rem;
+    display: inline-block;
+}
+.katsudo-pickup .NewsLogList_category {
+    color:#0065B5;
+    font-weight: bold;
+    margin-left:1em;
+}
+.katsudo-pickup .NewsLogList_title {
+    padding:0.3em 0 0;
+}
+.katsudo-pickup .NewsLogList_title a {
+    font-weight: bold;
+}
+.katsudo-pickup .NewsLogList_title a:hover {
+    text-decoration:underline;
+}
+.katsudo-pickup .NewsLogList_title img,
+.katsudo-pickup .NewsLogList_clear {
+    display: none;
+}
+.katsudo-pickup .katsudo-link {
+    color:#0065B5;
+    text-decoration:underline;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top:1em;
+}
+
+.katsudo-box-left {
+    float:left;
+    width:600px;
+}
+.katsudo-box-right {
+    float:right;
+    width:350px;
+}
+.katsudo-box-right img {
+    width:100%;
+    height:auto;
+}
+
+
+
+
+.member-boxes {}
+.member-wrapper .inner {
+    padding-bottom:3em;
+}
+.member-wrapper .NewsLogList_article {
+    background-color: #eee;
+    width:476px;
+    float:left;
+    margin:0 28px 30px 0;
+    padding:20px;
+    font-size:1.8rem;
+}
+.member-wrapper .NewsLogList_article:nth-of-type(2n+1) {
+    clear: left;
+}
+.member-wrapper .NewsLogList_article:nth-of-type(2n) {
+    margin-right:0;
+}
+.member-wrapper .NewsLogList_article:nth-last-of-type(-n+2) {
+    margin-bottom:0;
+}
+.member-wrapper .NewsLogList_thumbnail {
+    float:left;
+}
+.member-wrapper .NewsLogList_thumbnail img {
+    max-width:150px;
+    max-height:150px;
+    margin:0 !important;
+}
+.member-wrapper .NewsLogList_clear {
+    display: none;
+}
+.member-box ul {
+    float:left;
+}
+.member-wrapper .NewsLogList_info {
+    float:right;
+    width:258px;
+}
+.member-wrapper .NewsLogList_category {
+    padding:0.5em 0 1em;
+    font-size:1.6rem;
+}
+.member-wrapper .NewsLogList_name {
+    display: inline-block;
+    margin-left: 1em;
+}
+.member-wrapper .NewsLogList_title {}
+.member-wrapper .NewsLogList_title a {
+    font-weight: bold;
+    padding-bottom:0.5em;
+    display: inline-block;
+}
+.member-more a {
+    font-size:1.6rem;
+    font-weight: normal;
+    margin:0;
+}
+.member-more a:before {
+    position: relative;
+    top:2px;
+}
+
+
+.member-wrapper .NewsLogList_date {
+    display: none;
+}
+
+.single div.attached {}
+
+.eyecatch-images .titleBlock,
+.eyecatch-images .kijiinfo,
+.eyecatch-images h6 {
+    display: none;
+}
+
+
+div.attached.upper-attached {
+    margin-top:0 !important;
+}
+
+.single .head_l2 + .head_l2,
+.archive .head_l2 + .head_l2 {
+    display: none;
+}
+
+.archive2 .inner > .header {
+    display:none;
+}
+
+
+.archive .list .date {
+    position: relative;
+}
+.archive .list .date.up:after,
+.archive .list .date.new:after {
+    position: absolute;
+    display:inline-block;
+    color:#fff;
+    font-size:1rem;
+    padding:0.2em 0;
+    font-weight: bold;
+    right:3.5em;
+    min-width: 4em;
+    text-align: center;
+	top: 50%;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+.archive .list .date.up:after {
+    content:"UP";
+    background-color: #1073BA;
+}
+.archive .list .date.new:after {
+    content:"NEW";
+    background-color: #E91269;
+}
